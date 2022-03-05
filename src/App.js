@@ -9,6 +9,8 @@ import {
   from
 } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
+import { Container } from "reactstrap";
+import Main from "./components/Main.js";
 
 const errorLink = onError(({ graphqlErrors, networkError }) => {
   if (graphqlErrors) {
@@ -32,8 +34,9 @@ export default function App() {
   return (
     <div className="App">
       <ApolloProvider client={client}>
-        <h1>Hello CodeSandbox test</h1>
-        <h2>Start editing to see some magic happen!</h2>
+        <Container fluid>
+          <Main />
+        </Container>
       </ApolloProvider>
     </div>
   );
