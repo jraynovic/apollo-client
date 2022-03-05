@@ -1,5 +1,5 @@
 import React from "react";
-import NavComponent from "./NavComonent";
+import NavComponent from "./NavComponent";
 import BodyComponent from "./BodyComponent";
 import InputComponent from "./InputComponent";
 import { Row } from "reactstrap";
